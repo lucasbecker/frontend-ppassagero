@@ -1,0 +1,106 @@
+/* IMPORTAR FONTES*/
+
+/* SOFT RESET DO CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke; /* TEMPORARIO */
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* IMPLEMENTAR RESPONSIBILIDADE POR @MEDIA */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 55px;
+}
+
+.navbar{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    padding: 5px 10px;
+    margin: 0 1px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover{
+    background-color: #00aeef;
+    border-radius: 50px;
+    color: white;
+}
+
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#simulacao{
+    background-image: url("../img/background-simulacao.png");
+
+}
+
+.content{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text{
+    color: white;
+}
+.banner-text h1{
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.banner-text span{
+    color: #00aeef;
+}
+
+.banner-text h3{
+    font-size: 2em;
+}
+
+.form-simulacao{
+    height: 340px;
+    min-width: 290px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px;
+
+    font-size: 1.1em;
+    margin-left: 25px;
+}
