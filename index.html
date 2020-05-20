@@ -7,46 +7,227 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <!-- MENU -->
+    <header id="nav">
+        <nav class="navbar" >
             <div class="logo">
                 <a href="#"><img src="./img/logo.png" title="logo-ppassagero" alt="Ppassagero"></a>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#simulacao">Simulação</a></li>
-                    <li><a href="#">Vantagens</a></li>
-                    <li><a href="#">Para quem somos</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Frota</a></li>
-                    <li><a href="#">Promoções</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#paraquem">Para quem</a></li>
+                    <li><a href="#quemsomos">Sobre nós</a></li>
+                    <li><a href="#frota">Frota</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
-    <section class="container" id="simulacao">
-        <div class="content">
-            <div class="banner-text">
-                <h1>Encontre as <span>melhores ofertas</span> de aluguel de carro</h1>
-                <h3>Você é nosso Ppassagero, seja bem vindo!</h3>
+    <main>
+        <!-- SIMULAÇÃO -->
+        <section class="container" id="simulacao">
+            <div class="content-simulacao">
+                <div class="banner-text">
+                    <h1>Encontre as <span>melhores ofertas</span> de aluguel de carro</h1>
+                    <h3>Você é nosso Ppassagero, seja bem vindo!</h3>
+                </div>
+                <div class="form-simulacao">
+                    <h2>Faça uma simulação</h2>
+                    <form action="#" method="POST">
+                        <div>
+                            <div>
+                            <select name="carro">
+                                <option value="valor0" selected>Carro</option>
+                                <option value="valor1">BMX</option> 
+                                <option value="valor2" >HB20</option>
+                                <option value="valor3">Gol</option>
+                            </select></div>
+                            <div><input class="date" type="date"><input class="time" type="time" min="08:00" max="18:00" value="08:00"></div>
+                            <div><input class="date" type="date"><input class="time" type="time" min="08:00" max="18:00" value="18:00"></div>
+                            <input class="button" type="button" value="Simular">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-simulacao">
-                <h2>Faça uma simulação</h2>
-                <form action="#" method="POST">
-                    <div>
-                        <label for="carro">Carro:</label>
-                        <select name="carro">
-                            <option value="valor1">BMX</option> 
-                            <option value="valor2" selected>HB20</option>
-                            <option value="valor3">Gol</option>
-                        </select>
+        </section>
+        
+        <!-- VANTAGENS -->
+        <section class="container" id="vantagens">
+            <div class="content-vantagens">
+                <div class="titulo">
+                    <h2>Por que escolher o grupo Ppassagero?</h2>
+                    <p>Conheça as vantagens de alugar um carro com a gente!</p>
+                </div>
+                <div class="flex">
+                    <div class="vantagem">
+                        <img src="./img/icon-vantagens1.png" alt="icone carro revisado">
+                        <h3>Carros <br>Revisados</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque nesciunt, pariatur deleniti doloremque excepturi placeat eum reprehenderit error adipisci.</p>
                     </div>
-                </form>
+                    <div class="vantagem">
+                        <img src="./img/icon-vantagens2.png" alt="icone carro revisado">
+                        <h3>Conforto e Segurança</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque nesciunt, pariatur deleniti doloremque excepturi placeat eum reprehenderit error adipisci.</p>
+                    </div>
+                    <div class="vantagem">
+                        <img src="./img/icon-vantagens3.png" alt="icone carro revisado">
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque nesciunt, pariatur deleniti doloremque excepturi placeat eum reprehenderit error adipisci.</p>
+                    </div>
+                    <div class="vantagem">
+                        <img src="./img/icon-vantagens4.png" alt="icone carro revisado">
+                        <h3>Pontualidade e Comprometimento</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque nesciunt, pariatur deleniti doloremque excepturi placeat eum reprehenderit error adipisci.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- PARA QUEM SOMOS -->
+        <section class="container" id="paraquem">
+            <div class="content-paraquem">
+                <div class="titulo">
+                    <h2>Para quem somos?</h2>
+                    <p>Temos uma oferta especial para a sua necessidade.</p>
+                </div>
+                <div class="flex">
+                    <div class="quem">
+                        <div class="quem-top">
+                            <h3>Você</h3>
+                        </div>
+                        <div class="quem-bottom1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="quem">
+                        <div class="quem-top">
+                            <h3>Empresa</h3>
+                        </div>
+                        <div class="quem-bottom2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="quem">
+                        <div class="quem-top">
+                            <h3>Seguradora</h3>
+                        </div>
+                        <div class="quem-bottom3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- QUEM SOMOS-->
+        <section class="container" id="quemsomos">
+            <div class="content-quemsomos">
+                <div class="quemsomo-text">
+                    <h2>Sobre nós:</h2>
+                    <p>
+                        O Grupo Ppassagero em sua história conta com mais de 21 anos de atividades de prestação de serviços e tranposrtes.
+                    </p>
+                    <p>
+                        Agora vem ampliar a gama de produtos com a locação de veículos efetivando em Urussanga, a sua matriz.
+                    </p>
+                    <p>
+                        O intuito é proporcionar agilidade, comodidade, conforto, segurança e praticidade para seus clientes na locação de veículos.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FROTA -->
+        <section class="container" id="frota">
+            <div class="content-frota">
+                <div class="titulo">
+                    <h2>Carros Disponíveis</h2>
+                    <p>Confira nossa frota e encontre o carro que se encaixa na sua necessidade.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROMOÇÕES -->
+        <section class="container" id="promocoes">
+            <div class="content-promocoes">
+                <div class="titulo">
+                    <h2>Promoções</h2>
+                    <p>Fique ligado nas nossas promoções e aproveite os descontos.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PARCEIROS -->
+        <section class="container">
+            <div class="content-parceiros" id="parceiros">
+                <div class="titulo">
+                    <h2>Parceiros</h2>
+                    <p>Conheça os parceiros do Grupo Ppassagero.</p>
+                </div>
+                <div class="flex2">
+                    <img src="./img/parceiro1.png">
+                    <img src="./img/parceiro2.png">
+                    <img src="./img/parceiro3.png">
+                    <img src="./img/parceiro4.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="container" id="contato">
+            <div class="content-contato">
+                <div class="titulo-contato">
+                    <h2>Entre em contato:</h2>
+                </div>
+                <div class="conteudo-contato">
+
+                    <div class="coluna-esquerda">
+                        <form method="POST" action="#">
+                            <input class="box-name" id="name" type="text" name="name" placeholder="Nome completo" required>
+                            <input class="box-email" id="email" type="email" name="email" placeholder="Seu e-mail" required>
+                            <textarea class="box-txt" nome="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                            <input class="btn" type="submit" value="Enviar">
+                        </form>
+                    </div>
+
+                    <div class="coluna-direita">
+                        <img src="./img/icon-contato1.png"><p>ppssagero@gmail.com</p>
+                        <img src="./img/icon-contato2.png"><p>(48) 9926.0044</p>
+                        <img src="./img/icon-contato3.png"><p>Rodovia Genésio Mazon, Nº08 - Sala 09<br>Bairro: Estação - Urussanga/SC</p>
+                        <img src="./img/icon-contato4.png"><p>CEP: 88840-000</p>
+                        <img src="./img/icon-contato5.png"><p>Seg a Sex: 08h às 12h e 13:30h às 18h<br>Sab: 08h às 12h</p>
+                    
+                        <div class="grid-especial">
+                            <a href=""><img src="./img/icon-contato6.png"></a>
+                            <a href=""><img src="./img/icon-contato7.png"></a>
+                            <a href=""><img src="./img/icon-contato8.png"></a>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+        <section class="container" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12912.350087933544!2d-49.33243480755875!3d-28.538603448953797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95217432f9e895eb%3A0x878edc720f59fcc5!2sDa%20Esta%C3%A7%C3%A3o%2C%20Urussanga%20-%20SC%2C%2088840-000!5e0!3m2!1spt-BR!2sbr!4v1589936919956!5m2!1spt-BR!2sbr" width="1500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo-footer">
+            <a href="#nav"><img src="./img/logo-footer.png" alt="logo ppassagero"></a>
         </div>
-    </section>
-    
+        <p>Ppssagero 2020 | Web desing por <a target="_blank" href="">3v Motio Media</a> e desenvolvido por <a target="_blank" href="https://lucasbecker.github.io">Lucas Becker</a>.</p>
+
+    </footer>
+
 </body>
 </html>
