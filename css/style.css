@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: white; /* TEMPORARIO */
+    background-color: white;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -67,11 +67,11 @@ header{
     justify-items: center;   
     background-size: cover;
     background-position: bottom;
-    background-attachment: scroll; /* FIXO OU COM SCROL? */ 
+    background-attachment: scroll;
 }
 
 #simulacao{
-    height: 100vh;
+    height: 530px;
 
     background-image: url("../img/background-simulacao.png");
 
@@ -325,7 +325,69 @@ header{
 }
 
 #frota{
-    height: 500px;
+    height: 550px;
+}
+
+.slider-frota div{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card-car{
+    height: 380px;
+    width: 270px;
+    border-radius: 30px;
+    background-color: #00aeef;
+    box-shadow: 5px 5px 14px -10px black;
+
+}
+
+.card-car-img img{
+    height: 190px;
+    width: 270px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-car-info{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grade{
+    display: grid;
+    grid-template-columns: 20px 200px;
+    padding-left: 70px;
+}
+
+.card-car-info div h3{
+    font-weight: 300;
+    font-size: 1.3em;
+    color: white;
+}
+
+.card-car-info div img{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.card-car-info div p{
+    margin-bottom: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+.card-car-info div h4{
+    font-size: 1.1em;
+    color: white;
+
+}
+
+.card-car-info div span{
+    font-weight: 600;
+    color: #1e263d;
 }
 
 
@@ -335,7 +397,19 @@ header{
 }
 
 #promocoes{
-    height: 500px;
+    height: 580px;
+}
+
+.slider-promocoes div{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.slider-promocoes img{
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px -10px black;
 }
 
 
@@ -420,10 +494,9 @@ header{
     border-radius: 5px;
     border-style: none;
     color: #22365a;
-    background-color: #cdcccc;
+    background-color: white;
     font-size: 1.5em;
     font-weight: 600;
-
 }
 
 .coluna-direita{
