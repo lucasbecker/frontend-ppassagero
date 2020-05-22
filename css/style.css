@@ -289,6 +289,28 @@ label[for="bt_menu"]{
     font-size: 1.5em;
 }
 
+@media(max-width:800px){
+    #vantagens{
+        height: 550px;
+    }
+    .content-vantagens{
+        width: 400px;
+        flex-wrap: wrap;
+    }
+    .flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .vantagem{
+        /*margin-top: 50px;*/ /* CASO PRECISE DA DESCRIÇÃO*/
+        max-width: 125px;
+        font-size: 0.9em;
+    }
+    .vantagem p{
+        display: none; /*TIRAR ISSO DE PRECISAR DA DESCRIÇÃO*/
+    }
+}
+
 /* SECTION PARA QUEM */
 
 .content-paraquem{
@@ -369,7 +391,15 @@ label[for="bt_menu"]{
 .quem p{
     font-size: 1.5em;
     margin: 50px;
+}
 
+@media(max-width:800px){
+    #paraquem{
+        height: 1250px;
+    }
+    .quem{
+        margin-top: 25px;
+    }
 }
 
 /* SECTION QUEM SOMOS*/
@@ -401,6 +431,18 @@ label[for="bt_menu"]{
     font-size: 1.4em;
 }
 
+@media(max-width:800px){
+    #quemsomos{
+        background-position: left;
+    }
+    .content-quemsomos{
+        max-width: 800px;
+    }
+    .quemsomo-text{
+        margin: 0 auto;
+    }
+}
+
 /* SECTION FROTA*/
 .content-frota{
     width: 900px;
@@ -415,13 +457,19 @@ label[for="bt_menu"]{
     margin-bottom: 5px;
 }
 
+@media(max-width:800px){
+    .content-frota{
+        max-width: 350px;
+    }
+}
+
 .card-car{
     height: 380px;
     width: 270px;
+    margin: 0 auto;
     border-radius: 30px;
     background-color: #00aeef;
     box-shadow: 5px 5px 14px -10px black;
-
 }
 
 .card-car-img img{
@@ -464,7 +512,6 @@ label[for="bt_menu"]{
 .card-car-info div h4{
     font-size: 1.1em;
     color: white;
-
 }
 
 .card-car-info div span{
@@ -483,17 +530,25 @@ label[for="bt_menu"]{
 }
 
 .slider-promocoes div{
-    padding-left: 5px;
-    padding-right: 5px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .slider-promocoes img{
+    margin: 0 auto;
     border-radius: 30px;
     box-shadow: 5px 5px 10px -10px black;
 }
 
+@media(max-width:800px){
+    .content-promocoes{
+        width: 400px;
+    }
+    .slider-promocoes img{
+        height: 75%;
+        width: 75%;
+    }
+}
 
 /* SECTION PARCEIROS*/
 .content-parceiros{
@@ -510,7 +565,23 @@ label[for="bt_menu"]{
     align-items: center;
     justify-content: space-between;
 }
-  
+
+.flex2 img{
+    height: 120px;
+    width: 160px;
+}
+
+@media(max-width:800px){
+    .content-parceiros{
+        width: 400px;
+    }
+    #parceiros{
+        height: 500px;
+    }
+    .flex2{
+        flex-wrap: wrap;
+    }
+}
 
 /* SECTION CONTATO*/
 
@@ -522,6 +593,7 @@ label[for="bt_menu"]{
     background-image: url("../img/background-contato.png");
     height: 500px;
 }
+
 
 .titulo-contato{
     display: flex;
@@ -603,8 +675,33 @@ label[for="bt_menu"]{
     width: 35px;
     margin-right: 10px;
 }
-/* MAPA */
 
+@media(max-width:800px){
+    .content-contato{
+        width: 400px;
+    }
+    #contato{
+        height: 900px;
+    }
+    .titulo-contato h2{
+        font-size: 2.5em;
+    }
+    .conteudo-contato{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .coluna-esquerda{
+        justify-content: center;
+    }
+    .box-name, .box-email, .box-txt{
+        width: 100%;
+    }
+    .coluna-direita{
+        margin-top: 50px;
+        grid-template-columns: 50px 250px;
+        margin-left: 0px;
+    }
+}
 
 /* FOOTER*/
 footer{
