@@ -320,8 +320,11 @@ label[for="bt_menu"]{
     }
     .vantagem{
         /*margin-top: 50px;*/ /* CASO PRECISE DA DESCRIÇÃO*/
-        max-width: 125px;
+        max-width: 100px;
         font-size: 0.9em;
+    }
+    .vantagem h3{
+        font-size: 1.2em;
     }
     .vantagem p{
         display: none; /*TIRAR ISSO DE PRECISAR DA DESCRIÇÃO*/
