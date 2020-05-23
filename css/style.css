@@ -14,23 +14,18 @@ body{
     font-size: 12px;
 }
 
-/* IMPLEMENTAR RESPONSIBILIDADE POR @MEDIA, width e flex-wrap */
-
-
 /* CABEÇALHO E MENU */
 header{
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 60px;*/
     height: auto;
 }
 
 .menu{
     margin-top: 5px;
     width: 900px;
-    /*width: 100%;*/
     height: 55px;
 }
 
@@ -94,7 +89,6 @@ label[for="bt_menu"]{
     #bt_menu:checked ~ .menu{
         margin-left: 0;
     }
-
     header{
         display: block;
         height: 55px;
@@ -105,15 +99,12 @@ label[for="bt_menu"]{
         margin-left: -100%;
         transition: all .4s;
     }
-
     .menu ul{
         display: block;
     }
-
     .menu ul li{
         width: 100%;
     }
-
     .menu ul li a{
         font-size: 18px;
         margin-bottom: 5px;
@@ -127,9 +118,7 @@ label[for="bt_menu"]{
     }
 }
 
-
 /* SCETION SIMUAÇÃO*/
-
 .container{
     display: flex;
     justify-content: center;
@@ -143,7 +132,6 @@ label[for="bt_menu"]{
 #simulacao{
     height: 530px;
     background-image: url("../img/background-simulacao.png");
-
 }
 
 .content-simulacao{
@@ -157,6 +145,7 @@ label[for="bt_menu"]{
     color: white;
     width: 600px;
 }
+
 .banner-text h1{
     font-size: 4em;
     text-transform: uppercase;
@@ -176,10 +165,8 @@ label[for="bt_menu"]{
     background-color: white;
     border-radius: 10px;
     padding: 35px;
-
     font-size: 1.1em;
     margin-left: 25px;
-
     box-shadow: 0px 0px 1px 10px rgba(250, 250, 250, 0.5);
 }
 
@@ -195,7 +182,7 @@ label[for="bt_menu"]{
 
 [type="date"]::-webkit-inner-spin-button {
     display: none;
-  }
+}
 
 .date{
     width: 132px;
@@ -227,22 +214,51 @@ label[for="bt_menu"]{
     font-size: 1.8em;
     font-weight: 600;
     margin-top: 20px;
-
 }
 
 @media(max-width: 800px){
     #simulacao{
-        height: 850px;
+        height: 650px;
     }
     .content-simulacao{
-        max-width: 400px;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
     .banner-text{
+        padding: 15px;
+        width: 100%;
+        margin: 0;
     }
     .form-simulacao{
-        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:425px){
+    #simulacao{
+        height: 800px;
+    }
+    .banner-text h1{
+        font-size: 4em;
+    }
+}
+
+@media(max-width:375px){
+    #simulacao{
+        height: 750px;
+    }
+    .banner-text h1{
+        font-size: 3.8em;
+    }
+}
+
+@media(max-width:320px){
+    #simulacao{
+        height: 750px;
+    }
+    .banner-text h1{
+        font-size: 3.2em;
     }
 }
 
@@ -251,7 +267,6 @@ label[for="bt_menu"]{
 #vantagens{
     background-image: url("../img/background-vantagens.png");
     height: 400px;
-
 }
 
 .content-vantagens{
@@ -260,6 +275,8 @@ label[for="bt_menu"]{
 
 .titulo{
     margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: center;
 }
 
@@ -291,10 +308,10 @@ label[for="bt_menu"]{
 
 @media(max-width:800px){
     #vantagens{
-        height: 550px;
+        height: 250px;
     }
     .content-vantagens{
-        width: 400px;
+        width: 100%;
         flex-wrap: wrap;
     }
     .flex{
@@ -311,8 +328,25 @@ label[for="bt_menu"]{
     }
 }
 
-/* SECTION PARA QUEM */
+@media(max-width:425px){
+    #vantagens{
+        height: 500px;
+    }
+}
 
+@media(max-width:375px){
+    #vantagens{
+        height: 500px;
+    }
+}
+
+@media(max-width:320px){
+    #vantagens{
+        height: 850px;
+    }
+}
+
+/* SECTION PARA QUEM */
 .content-paraquem{
     margin-top: 80px;
     width: 900px; 
@@ -320,7 +354,6 @@ label[for="bt_menu"]{
 
 #paraquem{
     height: 620px;
-
 }
 
 .quem{
@@ -329,7 +362,6 @@ label[for="bt_menu"]{
     width: 270px;
     border-radius: 30px;
     border: 3px solid #00aeef;
-
     box-shadow: 5px 5px 30px -10px black;
 }
 
@@ -395,10 +427,32 @@ label[for="bt_menu"]{
 
 @media(max-width:800px){
     #paraquem{
-        height: 1250px;
+        height: 900px;
+    }
+    .content-paraquem{
+        width: 100%;
     }
     .quem{
+        margin: 0 auto;
         margin-top: 25px;
+    }
+}
+
+@media(max-width:425px){
+    #paraquem{
+        height: 1250px;
+    }
+}
+
+@media(max-width:375px){
+    #paraquem{
+        height: 1250px;
+    }
+}
+
+@media(max-width:320px){
+    #paraquem{
+        height: 1250px;
     }
 }
 
@@ -434,12 +488,43 @@ label[for="bt_menu"]{
 @media(max-width:800px){
     #quemsomos{
         background-position: left;
+        height: 500px;
     }
     .content-quemsomos{
-        max-width: 800px;
+        width: 100%;
     }
     .quemsomo-text{
+        padding: 15px;
         margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media(max-width:425px){
+    #quemsomos{
+        height: 500px;
+    }
+    .quemsomo-text{
+        width: 100%;
+    }
+}
+
+@media(max-width:375px){
+    #quemsomos{
+        height: 500px;
+    }
+    .quemsomo-text{
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    #quemsomos{
+        height: 550px;
+    }
+    .quemsomo-text{
+        width: 100%;
+        padding-bottom: 25px;
     }
 }
 
@@ -455,12 +540,6 @@ label[for="bt_menu"]{
 .slider-frota div{
     margin-top: 10px;
     margin-bottom: 5px;
-}
-
-@media(max-width:800px){
-    .content-frota{
-        max-width: 350px;
-    }
 }
 
 .card-car{
@@ -488,7 +567,7 @@ label[for="bt_menu"]{
 
 .grade{
     display: grid;
-    grid-template-columns: 20px 200px;
+    grid-template-columns: 20px 150px;
     padding-left: 70px;
 }
 
@@ -519,6 +598,29 @@ label[for="bt_menu"]{
     color: #1e263d;
 }
 
+@media(max-width:800px){
+    #frota{
+        height: 550px;
+    }
+    .content-frota{
+        width: 80%;
+    }
+    .slider-frota{
+        width: 100%;
+    }
+}
+
+@media(max-width:425px){
+    #frota{
+        height: 550px;
+    }
+}
+
+@media(max-width:375px){
+    #frota{
+        height: 600px;
+    }
+}
 
 /* SECTION PROMOÇÕES*/
 .content-promocoes{
@@ -541,13 +643,33 @@ label[for="bt_menu"]{
 }
 
 @media(max-width:800px){
+    #promocoes{
+        height: 700px;
+    }
     .content-promocoes{
-        width: 400px;
+        margin-top: 50px;
+        width: 80%;
     }
     .slider-promocoes img{
         height: 75%;
         width: 75%;
     }
+}
+
+@media(max-width:425px){
+    #promocoes{
+        height: 550px;
+    }
+    .slider-promocoes img{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media(max-width:320px){
+   #promocoes{
+       height: 450px;
+   }
 }
 
 /* SECTION PARCEIROS*/
@@ -572,19 +694,41 @@ label[for="bt_menu"]{
 }
 
 @media(max-width:800px){
-    .content-parceiros{
-        width: 400px;
-    }
     #parceiros{
-        height: 500px;
+        height: 400px;
+    }
+    .content-parceiros{
+        width: 100%;
     }
     .flex2{
         flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .flex2 img{
+        margin: 10px;
+    }
+}
+
+@media(max-width:425px){
+    #parceiros{
+        height: 500px;
+    }
+}
+
+@media(max-width:375px){
+    #parceiros{
+        height: 550px;
+    }
+}
+
+@media(max-width:320px){
+    #parceiros{
+        height: 800px;
     }
 }
 
 /* SECTION CONTATO*/
-
 .content-contato{
     width: 900px;
 }
@@ -593,7 +737,6 @@ label[for="bt_menu"]{
     background-image: url("../img/background-contato.png");
     height: 500px;
 }
-
 
 .titulo-contato{
     display: flex;
@@ -678,7 +821,7 @@ label[for="bt_menu"]{
 
 @media(max-width:800px){
     .content-contato{
-        width: 400px;
+        width: 100%;
     }
     #contato{
         height: 900px;
@@ -725,8 +868,26 @@ footer p{
 footer a{
     text-decoration: none;
     color: black;
+    text-align: center;
+    justify-content: center;
 }
 
 footer a:hover{
     color: white;
+}
+
+@media(max-width:800px){
+    footer{
+        width: 100%;
+    }
+    .logo-footer{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:372px){
+    .logo-footer img{
+        width: 100%;
+        height: 100%;
+    }
 }
