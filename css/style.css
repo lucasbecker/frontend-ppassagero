@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Para fazer altura automatica*/
+html, body{
+    height: 100%;
+}
 
 body{
     background-color: white;
@@ -127,6 +131,8 @@ label[for="bt_menu"]{
     background-position: bottom;
     background-attachment: scroll;
     position: static;
+    /*Altura Automatica*/
+    height: auto;
 }
 
 #simulacao{
