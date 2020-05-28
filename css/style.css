@@ -242,6 +242,11 @@ label[for="bt_menu"]{
     font-size: 1.8em;
     font-weight: 700;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #00aeef;
 }
 
 @media(max-width: 800px){

@@ -45,15 +45,15 @@
                     <form action="#" method="POST">
                         <div>
                             <div>
-                            <select name="carro">
-                                <option value="valor0" selected>Selecione o Veículo</option>
-                                <option value="valor1">BMX</option> 
-                                <option value="valor2" >HB20</option>
-                                <option value="valor3">Gol</option>
+                            <select name="carro" id="inputcarro">
+                                <option value="0" selected>Selecione o Veículo</option>
+                                <option value="150">Captur 1.6 ZEN</option> 
+                                <option value="67" >Onix 1.0 JOY</option>
+                                <option value="99">Montana 1.4 SL</option>
                             </select></div>
-                            <div><input class="date" type="date"><input class="time" type="time" min="08:00" max="18:00" value="08:00"></div>
-                            <div><input class="date" type="date"><input class="time" type="time" min="08:00" max="18:00" value="18:00"></div>
-                            <input class="button" type="button" value="Simular">
+                            <div><input class="date" id="dataout" type="date"><input class="time" id="horaout" type="time" min="08:30" max="18:00" value="08:30"></div>
+                            <div><input class="date" id="datain" type="date"><input class="time" id="horain" type="time" min="08:30" max="18:00" value="18:00"></div>
+                            <input class="button" id="btnsimula" type="button" value="Simular" onclick="calcular()">
                         </div>
                     </form>
                 </div>

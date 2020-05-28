@@ -1,3 +1,53 @@
+var dateControl1 = document.getElementById('dataout');
+var dateControl2 = document.getElementById('datain');
+
+// Criando variavel com data atual completa
+var data = new Date();
+
+// Criando variavel com string da data
+var now = data.getFullYear() + '-' + ("0000" + (data.getMonth() + 01) ).slice(-2) + '-' + data.getDate();
+
+// Passando string para o min e value dos date-input
+dateControl1.min = now;
+dateControl2.min = now;
+dateControl1.value = now;
+dateControl2.value = now;
+
+function formataReal(real){
+  
+  return real.toFixed(2).replace(".",",");
+  
+}
+
+function calcular(){
+  
+  var carro = document.getElementById('inputcarro').value;
+  var dataInicial = document.getElementById('dataout').value;
+  var horaInicial = document.getElementById('horaout').value;
+  var dataFinal = document.getElementById('datain').value;
+  var horaFinal = document.getElementById('horain').value;
+  
+  var retirada = new Date(dataInicial+" "+horaInicial);
+  var devolucao = new Date(dataFinal+" "+horaFinal);
+  var diff = Math.abs(devolucao.getTime() - retirada.getTime());
+
+  //Tempo em minutos
+  var tempo = Math.ceil(diff / (1000*60));
+
+  // TESTES
+  //console.log(dataInicial+" "+horaInicial);
+  //console.log(dataFinal+" "+horaFinal);
+  
+  // Formula
+  var valor = (carro/1440) * tempo;
+  
+  document.getElementById('btnsimula').value = `Valor R$` + formataReal(valor);
+
+}
+
+
+
+
 $('.slider-frota').slick({
     dots: true,
     infinite: true,
@@ -15,9 +65,6 @@ $('.slider-frota').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -39,9 +86,6 @@ $('.slider-promocoes').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -69,8 +113,5 @@ $('.slider-promocoes').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
