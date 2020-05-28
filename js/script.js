@@ -5,13 +5,15 @@ var dateControl2 = document.getElementById('datain');
 var data = new Date();
 
 // Criando variavel com string da data
-var now = data.getFullYear() + '-' + ("0000" + (data.getMonth() + 01) ).slice(-2) + '-' + data.getDate();
+var now = data.getFullYear() + '-' + ('00' + (data.getMonth() + 01) ).slice(-2) + '-' + data.getDate();
+
+var forward = data.getFullYear() + '-' + ('00' + (data.getMonth() + 01) ).slice(-2) + '-' + (data.getDate()+1);
 
 // Passando string para o min e value dos date-input
 dateControl1.min = now;
 dateControl2.min = now;
 dateControl1.value = now;
-dateControl2.value = now;
+dateControl2.value = forward;
 
 function formataReal(real){
   
