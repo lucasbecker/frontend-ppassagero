@@ -26,6 +26,10 @@ header{
     justify-content: center;
     align-items: center;
     height: auto;
+    /*Menu Flutuante*/
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .menu{
@@ -61,7 +65,7 @@ header{
 }
 
 #logo{
-    margin-right: 100px;
+    margin-right: 25px;
 }
 
 #logo a:hover{
@@ -157,6 +161,7 @@ label[for="bt_menu"]{
 }
 
 #simulacao{
+    padding-top: 60px;
     height: 530px;
     background-image: url("../img/background-simulacao.png");
 }
