@@ -43,20 +43,26 @@
                 </div>
                 <div class="form-simulacao">
                     <h2>Simular Agendamento</h2>
-                    <form action="#" method="POST">
+                    <form>
                         <div>
+                            <div class="seletor">
                             <div>
                             <select name="carro" id="inputcarro">
-                                <option value="60" selected>Fiat Mob 1.0 LIKE</option>
-                                <option value="150">Captur 1.6 ZEN</option> 
-                                <option value="67" >Onix 1.0 JOY</option>
-                                <option value="99">Montana 1.4 SL</option>
-                            </select></div>
-                            <div><input class="date" id="dataout" type="date"><input class="time" id="horaout" type="time" min="08:30" max="18:00" value="08:30"></div>
-                            <div><input class="date" id="datain" type="date"><input class="time" id="horain" type="time" min="08:30" max="18:00" value="08:30"></div>
+                                <option value="0" selected>Selecione Um Carro</option>
+                                <option value="110/100/90/70.60/57.05/43.50" >Fiat Mob 1.0 LIKE</option>
+                                <option value="200/180/160/100/80/76">Captur 1.6 ZEN</option> 
+                                <option value="120/110/100/75/61/45.25" >Onix 1.0 JOY</option>
+                                <option value="155/140/130/120/65/57">Montana 1.4 SL</option>
+                            </select>
+                            <button class="addbutton">+</button>
+                            </div>
+                            </div>
+                            <div><label for="dataout">De:</label><input class="date" id="dataout" type="date" ></div>
+                            <div><label for="datain">Até:</label><input class="date" id="datain" type="date"></div>
                             <input class="button" id="btnsimula" type="button" value="Simular" onclick="calcular()">
                         </div>
                     </form>
+                    <p>*Para simulações com quilômetro controlado entre em <a href="#contato">contato</a>.</p>
                 </div>
             </div>
         </section>
@@ -225,10 +231,11 @@
                     <p>Fique ligado nas nossas promoções e aproveite os descontos.</p>
                 </div>
                 <div class="slider-promocoes">
-                    <div><img src="./img/promocao1.png"></div>
-                    <div><img src="./img/promocao1.png"></div>
-                    <div><img src="./img/promocao1.png"></div>
-                    <div><img src="./img/promocao1.png"></div>
+                    <div><img src="./promo/promocao1.png"></div>
+                    <div><img src="./promo/promocao2.png"></div>
+                    <div><img src="./promo/promocao3.png"></div>
+                    <div><img src="./promo/promocao4.png"></div>
+                    <div><img src="./promo/promocao5.png"></div>
                 </div>
             </div>
         </section>
@@ -241,10 +248,10 @@
                     <p>Parceirias sólidas que visam a melhoria do futuro e da qualidade de vida na região.</p>
                 </div>
                 <div class="slider-parceiros">
-                    <div><img src="./img/parceiro1.png"></div>
-                    <div><img src="./img/parceiro2.png"></div>
-                    <div><img src="./img/parceiro3.png"></div>
-                    <div><img src="./img/parceiro4.png"></div>
+                    <div><img src="./parceiros/parceiro1.png"></div>
+                    <div><img src="./parceiros/parceiro2.png"></div>
+                    <div><img src="./parceiros/parceiro3.png"></div>
+                    <div><img src="./parceiros/parceiro4.png"></div>
                 </div>
             </div>
         </section>
@@ -285,6 +292,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Google Maps -->
         <section class="container" id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d876.3254861597151!2d-49.3168571!3d-28.5306427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95217430cc30eed5%3A0x3149ab53840d4c89!2sSC-445%2C%2019%20-%20Da%20Esta%C3%A7%C3%A3o%2C%20Urussanga%20-%20SC%2C%2088840-000!5e0!3m2!1spt-BR!2sbr!4v1590179221278!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
@@ -298,6 +307,13 @@
         </div>
         <p>Ppssagero © 2020 | Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/william-viana-1178577a/">3v Motio Media</a> e <a target="_blank" href="https://www.linkedin.com/in/lucasbeckerfelisberto/">Lucas Becker</a>.</p>
     </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <div class="fab">
+        <button>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5548999960044&text=Ol%C3%A1%2C%20gostaria%20de%20alugar%20um%20carro!"><img src="./img/icon-contato8.png"></a>
+        </button>
+    </div>
 
     <!-- Scripts -->
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>

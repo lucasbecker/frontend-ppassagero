@@ -83,7 +83,7 @@ label[for="bt_menu"]{
     cursor: pointer;
     width: 60px;
     height: 60px;
-    margin-left: 80%;
+    margin-left: 86%;
 }
 
 #logo-mm{
@@ -109,7 +109,7 @@ label[for="bt_menu"]{
     label[for="bt_menu"]{
         display: block;
     }
-    label[for="bt_menu"]:hover{
+    label[for="bt_menu"]:hover, label[for="bt_menu"]:active {
         background-color: #00aeef;
     }
     #bt_menu:checked ~ .menu{
@@ -139,7 +139,7 @@ label[for="bt_menu"]{
         padding: 10px;
         /*border: 1px solid #22365a;*/
     }
-    .menu ul li a:hover{
+    .menu ul li a:hover, .menu ul li a:active{
         border-radius: 0px;
     }
     #logo{
@@ -162,7 +162,7 @@ label[for="bt_menu"]{
 
 #simulacao{
     padding-top: 60px;
-    height: 530px;
+    min-height: 530px;
     background-image: url("../img/background-simulacao.png");
 }
 
@@ -193,7 +193,7 @@ label[for="bt_menu"]{
 }
 
 .form-simulacao{
-    height: 340px;
+    min-height: 340px;
     width: 290px;
     background-color: white;
     border-radius: 10px;
@@ -202,15 +202,51 @@ label[for="bt_menu"]{
     margin-left: 25px;
     box-shadow: 0px 0px 1px 10px rgba(250, 250, 250, 0.5);
 }
+.form-simulacao h2{
+    margin-bottom: 20px;
+}
 
 .form-simulacao select{
-    width: 220px;
+    width: 180px;
     height: 40px;
     border-radius: 5px;
     border-color: #b3b3b3;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
     font-size: 1.3em;
-    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+
+}
+
+.addbutton{
+    width: 35px;
+    height: 40px;
+    margin-left: 2px;
+    color: white;
+    background-color: #22365a;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.removebutton{
+
+    width: 35px;
+    height: 40px;
+    margin-left: 5px;
+    color: white;
+    background-color: #22365a;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.addbutton:hover, .removebutton:hover{
+    background-color: #00aeef;
 }
 
 [type="date"]::-webkit-inner-spin-button {
@@ -218,15 +254,26 @@ label[for="bt_menu"]{
 }
 
 .date{
-    width: 132px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid #b3b3b3;
     font-size: 1.3em;
-    margin-top: 20px;
-    padding-left: 5px;
+    margin-top: 5px;
+    padding-left: 40px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
+.form-simulacao label{
+    display: block;
+    height: 0;
+    position: relative;
+    font-size: 1.3em;
+    line-height: calc(2em / .6);
+    padding-left: 5px;
+}
+/*
 .time{
     width: 88px;
     height: 40px;
@@ -235,7 +282,7 @@ label[for="bt_menu"]{
     font-size: 1.3em;
     margin-top: 20px;
     padding-left: 5px;
-}
+}*/
 
 .button{
     width: 220px;
@@ -247,11 +294,17 @@ label[for="bt_menu"]{
     font-size: 1.8em;
     font-weight: 700;
     margin-top: 20px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 
 .button:hover{
     background-color: #00aeef;
+}
+
+.form-simulacao p{
+    text-align: center;
+    font-weight: 300;
 }
 
 @media(max-width: 800px){
@@ -508,6 +561,7 @@ label[for="bt_menu"]{
     #quemsomos{
         background-position: left;
         height: 100%;
+        background-position-y: top;
     }
     .content-quemsomos{
         width: 100%;
@@ -645,6 +699,8 @@ label[for="bt_menu"]{
 }
 
 .slider-promocoes img{
+    height: 400px;
+    width: 400px;
     margin: 0 auto;
     border-radius: 30px;
     box-shadow: 5px 5px 10px -10px black;
@@ -886,3 +942,35 @@ footer a:hover{
         padding-right: 15px;
     }
 }
+
+/* Botão Flutuante WhatsApp */
+
+.fab{
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+  }
+  
+  .fab button{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #22365a;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    font-size: 24px;
+    color: white;
+  }
+
+  .fab button img{
+      margin-top: 5px;
+  }
+  
+  .fab button:focus{
+    outline: none;
+  }
+
+  .fab button:hover{
+      background-color: #00aeef;
+  }
