@@ -188,7 +188,7 @@ label[for="bt_menu"]{
     color: #00aeef;
 }
 
-.banner-text h3{
+.banner-text h2{
     font-size: 2em;
 }
 
@@ -215,7 +215,6 @@ label[for="bt_menu"]{
     font-size: 1.3em;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 5px;
-
 }
 
 .addbutton{
@@ -232,7 +231,6 @@ label[for="bt_menu"]{
 }
 
 .removebutton{
-
     width: 35px;
     height: 40px;
     margin-left: 5px;
@@ -545,7 +543,7 @@ label[for="bt_menu"]{
     font-size: 3em;
 }
 
-.content-quemsomos h4{
+.content-quemsomos h3{
     color: #00aeef;
     font-size: 1.5em;
 }

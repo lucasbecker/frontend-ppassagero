@@ -44,7 +44,7 @@
             <div class="content-simulacao">
                 <div class="banner-text">
                     <h1>Encontre as <span>melhores ofertas</span> de aluguel de carro</h1>
-                    <h3>Você é nosso Ppassagero, seja bem vindo!</h3>
+                    <h2>Você é nosso Ppassagero, seja bem vindo!</h2>
                 </div>
                 <div class="form-simulacao">
                     <h2>Simular Agendamento</h2>
@@ -52,6 +52,7 @@
                         <div>
                             <div class="seletor">
                             <div>
+                            <label for="inputcarro"></label>
                             <select name="carro" id="inputcarro">
                                 <option value="0" selected>Selecione Um Carro</option>
                                 <option value="110/100/90/70.60/57.05/43.50" >Fiat Mob 1.0 LIKE</option>
@@ -144,7 +145,7 @@
             <div class="content-quemsomos">
                 <div class="quemsomos-text">
                     <h2>Sobre nós:</h2>
-                    <h4>Com o Grupo Ppassagero você vai mais longe.</h4>
+                    <h3>Com o Grupo Ppassagero você vai mais longe.</h3>
                     <p>
                         O Grupo Ppassagero em sua história conta com mais de 21 anos nas atividades de prestação de serviços e tranposrtes.
                     </p>
@@ -172,7 +173,7 @@
                 <div class="slider-frota">
                     <div>
                         <div class="card-car">
-                            <div class="card-car-img"><img src="./img/card-car1.png"></div>
+                            <div class="card-car-img"><img alt="" src="./img/card-car1.png"></div>
                             <div class="card-car-info">
                                 <div><h3>2018 <span>Captur 1.6 ZEN</span></h3></div>
                                 <div class="conteudo-card"><p><img alt="Lugares" src="./img/icon-card1.png">5 Lugares</p>
@@ -185,7 +186,7 @@
                     </div>
                     <div>
                         <div class="card-car">
-                            <div class="card-car-img"><img src="./img/card-car2.png"></div>
+                            <div class="card-car-img"><img alt="" src="./img/card-car2.png"></div>
                             <div class="card-car-info">
                                 <div><h3>2018 <span>Onix 1.0 JOY</span></h3></div>
                                 <div class="conteudo-card"><p><img alt="Lugares" src="./img/icon-card1.png">5 Lugares</p>
@@ -198,7 +199,7 @@
                     </div>
                     <div>
                         <div class="card-car">
-                            <div class="card-car-img"><img src="./img/card-car3.png"></div>
+                            <div class="card-car-img"><img alt="" src="./img/card-car3.png"></div>
                             <div class="card-car-info">
                                 <div><h3>2020 <span>Montana 1.4 SL</span></h3></div>
                                 <div class="conteudo-card"><p><img alt="Lugares" src="./img/icon-card1.png">2 Lugares</p>
@@ -211,7 +212,7 @@
                     </div>
                     <div>
                         <div class="card-car">
-                            <div class="card-car-img"><img src="./img/card-car4.png"></div>
+                            <div class="card-car-img"><img alt="" src="./img/card-car4.png"></div>
                             <div class="card-car-info">
                                 <div><h3>2020 <span>Fiat Mob 1.0 LIKE</span></h3></div>
                                 <div class="conteudo-card"><p><img alt="Lugares" src="./img/icon-card1.png">4 Lugares</p>
@@ -268,9 +269,12 @@
 
                     <div class="coluna-esquerda">
                         <form method="POST" action="#">
+                            <label for="name"></label>
                             <input class="box-name" id="name" type="text" name="name" placeholder="Nome completo" required>
+                            <label for="email"></label>
                             <input class="box-email" id="email" type="email" name="email" placeholder="Seu e-mail" required>
-                            <textarea class="box-txt" nome="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                            <label for="mensagem"></label>
+                            <textarea class="box-txt" id="mensagem" nome="mensagem" placeholder="Digite sua mensagem" required></textarea>
                             <input class="btn" type="submit" value="Enviar" name="Enviar">
                         </form>
                     </div>
@@ -297,7 +301,7 @@
 
         <!-- Google Maps -->
         <section class="container" id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d876.3254861597151!2d-49.3168571!3d-28.5306427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95217430cc30eed5%3A0x3149ab53840d4c89!2sSC-445%2C%2019%20-%20Da%20Esta%C3%A7%C3%A3o%2C%20Urussanga%20-%20SC%2C%2088840-000!5e0!3m2!1spt-BR!2sbr!4v1590179221278!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe title="Localização no Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d876.3254861597151!2d-49.3168571!3d-28.5306427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95217430cc30eed5%3A0x3149ab53840d4c89!2sSC-445%2C%2019%20-%20Da%20Esta%C3%A7%C3%A3o%2C%20Urussanga%20-%20SC%2C%2088840-000!5e0!3m2!1spt-BR!2sbr!4v1590179221278!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
         
     </main>
