@@ -15,19 +15,11 @@ dateControl2.min = forward;
 dateControl1.value = now;
 dateControl2.value = forward;
 
-// Testes
-//console.log(now);
-//console.log(forward);
-
 function formataReal(real){
-  
   return real.toFixed(2).replace(".",",");
-  
 }
 
-
 function calcular(){
-  //Voltar nessa parte após fazer o CRUD
   var carro = document.getElementById('inputcarro').value;
   var myString = carro;
   var splits = myString.split('/');
@@ -110,9 +102,6 @@ $(document).ready(function() {
   })
 
 });
-
-
-
 
 $('.slider-frota').slick({
     dots: true,
